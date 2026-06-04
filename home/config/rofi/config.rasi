@@ -1,0 +1,94 @@
+configuration {
+	modes: "drun,run,filebrowser";
+	font: "CaskaydiaCove Nerd Font Bold 13";
+	show-icons: true;
+	icon-theme: "Papirus";
+	hover-select: true;
+	sidebar-mode: false;
+	display-drun: " ";
+	display-run: " ";
+	display-filebrowser: " ";
+}
+
+window {
+	location: center;
+	width: 480;
+	border: 4px;
+	border-color: rgba(180,190,254,1);
+	border-radius: 18px;
+	background-color: rgba(30,30,46,0.8);
+}
+
+mainbox {
+	padding: 12px;
+}
+
+inputbar {
+	border: 4px;
+	border-color: rgba(180,190,254,1);
+	border-radius: 12px;
+	padding: 8px 16px;
+	spacing: 8px;
+	children: [
+		prompt,
+		entry
+	];
+}
+
+prompt {
+	text-color: rgba(180,190,254,1);
+}
+
+entry {
+	placeholder: "Что-то ...";
+	placeholder-color: rgba(166,173,200,0.5);
+	text-color: rgba(166,173,200,1);
+}
+
+message {
+	margin: 12px 0 0;
+}
+
+textbox {
+	padding: 8px 24px;
+}
+
+listview {
+	margin: 12px 0 0;
+	padding: 6px;
+	lines: 10;
+	columns: 1;
+	fixed-height: false;
+	scrollbar: false;
+	border: 4px;
+	border-color: rgba(180,190,254,1);
+	border-radius: 12px;
+}
+
+element {
+	padding: 10px 16px;
+	spacing: 8px;
+	border-radius: 6px;
+}
+
+element selected normal, element selected active {
+	background-color: rgba(180,190,254,0.3);
+	text-color: rgba(166,173,200,1);
+	border: 4px;
+	border-color: rgba(180,190,254,1);
+}
+
+element normal normal, element alternate normal, element active normal {
+	background-color: transparent;
+	text-color: rgba(166,173,200,0.5);
+
+}
+
+element-icon {
+	size: 1em;
+	vertical-align: 0.5;
+}
+
+element-text {
+    	text-color: inherit;
+}

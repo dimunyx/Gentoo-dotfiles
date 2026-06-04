@@ -1,0 +1,149 @@
+* {
+	font-family: "CaskaydiaCove Nerd Font";
+	font-size: 18px;
+	color: rgba(180,190,254,1);
+}
+
+:root {
+  	--border-radius: 18px;
+  	--cc-bg: rgba(255,255,255,1);
+  	--widget-background: rgba(180,190,254,0.25);
+  	--noti-bg-alpha: 1;
+  	--padding: 6px;
+}
+
+.control-center {
+	background: rgba(30,30,46,0.8);
+	border: 4px solid rgba(180,190,254,1);
+	border-radius: 18px;
+	margin: 12px 12px 0 0;
+}
+
+.widget-title > button {
+	background: transparent;
+	border: 4px solid rgba(180,190,254,1);
+}
+
+.widget-title > button:hover {
+	background: rgba(180,190,254,0.3);
+}
+
+.widget-dnd switch {
+	background: transparent;
+	border: 4px solid rgba(180,190,254,1);
+}
+
+.widget-dnd switch:hover {
+	background: rgba(180,190,254,0.3);
+}
+
+.widget-dnd switch slider {
+	background: rgba(180,190,254,1);
+}
+
+.widget-dnd switch:checked {
+	background: rgba(30,30,46,1);
+}
+
+.widget-dnd switch:checked:hover {
+	background: rgba(180,190,254,0.3);
+}
+
+.widget-dnd {
+	background: transparent;
+	border: 4px solid rgba(255,255,255,0.8);
+	text-color: rgba(165,173,203,1);
+	border-radius: 18px;
+}
+
+.widget-dnd .text {
+	color: rgba(165,173,203,1);
+}
+
+.widgets > .widget {
+  	background: transparent;
+  	border-radius: 18px;
+  	padding: var(--padding);
+  	border: 4px solid rgba(180,190,254,1);
+  	color: rgba(165,173,203,1);
+}
+
+.control-center-list-placeholder {
+  	padding: var(--padding);
+}
+
+.notification-default-action image,
+.notification-action image {
+	border-radius: 0;
+}
+
+.notification-group {
+  	border-radius: 18px;
+  	padding: 8px;
+  	background: rgba(180,190,254,0.01);
+  	color: black;
+}
+
+.notification-group .close-button {
+	color: rgba(255,255,255,1);
+	background: rgba(180,190,254,0.25);
+	border-radius: 18px;
+}
+
+.notification-group .close-button:hover {
+	background-color: rgba(180,190,254,0.5);
+}
+
+.notification-group .close-button:active {
+	background-color: rgba(180,190,254,0.9);
+}
+
+.notification {
+	background-color: rgba(30,30,46,0.5);
+	border-radius: 20px;
+	margin: 6px 0 0 0;
+}
+
+.notification:hover {
+	background-color: rgba(30,30,46,0.75);
+}
+
+.notification-background {
+  	border-radius: 18px;
+  	color: rgba(180,190,254,1);
+	background: transparent;
+}
+
+.notification-background .notification:hover {
+	background-color: transparent;
+}
+
+.notification-background .notification {
+  	border-radius: 18px;
+}
+
+.notification-content .summary,
+.notification-content .time,
+.notification-content .body {
+  	color: rgba(165,173,203,1);
+}
+
+.notification-background .close-button {
+  	border-radius: 18px;
+  	color: rgba(180,190,254,1);
+  	background-color: rgba(180,190,254,0.25);
+}
+
+.notification-background .close-button:hover {
+  	background-color: rgba(180,190,254,0.5);
+}
+
+.notification-background .close-button:active {
+  	background-color: rgba(180,190,254,0.9);
+}
+
+.notification-row .notification-background .notification .notification-action:hover,
+.notification-row .notification-background .notification .notification-default-action:hover {
+	background: rgba(180,190,254,0.3);
+	border-radius: 0;
+}

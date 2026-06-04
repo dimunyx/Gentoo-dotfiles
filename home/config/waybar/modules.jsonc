@@ -1,0 +1,255 @@
+{
+	"image": {
+		"path": "/home/dimunyx/.config/waybar/icons/gentoo.svg",
+		"tooltip": false
+	},
+	"power-profiles-daemon": {
+ 		"format": "{icon}",
+  		"format-icons": {
+    			"default": "",
+    			"performance": "",
+    			"balanced": "",
+    			"power-saver": ""
+  		},
+		"tooltip": false
+	},
+	"custom/hypr-ver": {
+		"exec": "Hyprland --version | head -n1 | awk '{print $2}'",
+		"format": " {}",
+		"tooltip": false
+	},
+	"custom/kernel-ver": {
+		"exec": "uname -r",
+		"format": " {}",
+		"tooltip": false
+	},
+	
+	"custom/cava": {
+		"exec": "/home/dimunyx/.config/waybar/scripts/cava.sh",
+		"format": "󰎇 {}",
+		"tooltip": false
+	},
+
+	"tray": {
+		"icon-size": 16,
+		"spacing": 2
+	},
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"active": "",
+			"empty": "",
+			"default": "",
+			"urgent": "!"
+		},
+		"on-scroll-up": "/home/dimunyx/.config/waybar/scripts/prev-ws.sh",
+		"on-scroll-down": "/home/dimunyx/.config/waybar/scripts/next-ws.sh",
+		"persistent-workspaces": {
+			"*": 10
+		},
+		"tooltip": false
+	},
+	"hyprland/language": {
+		"format": " {short}",
+		"interval": 1,
+		"tooltip": false
+	},
+	"disk": {
+		"format": " {percentage_used}%",
+		"format-alt": " {used}/{total}",
+		"path": "/",
+		"unit": "GiB",
+		"interval": 1,
+		"states": {
+			"default": 20,
+			"warning": 50,
+			"critical": 99
+		},
+		"tooltip": false
+	},
+	"custom/wttrbar": {
+		"exec": "wttrbar --nerd --lang ru --location Lozova+Moldova",
+		"format": "{}°",
+		"interval": 1,
+		"return-type": "json"
+	},
+	"clock": {
+		"format": " {:%H:%M}",
+		"format-alt": " {:%H:%M:%S  %d.%m.%Y (%A)}",
+		"interval": 1,
+		"tooltip": false
+	},
+	"network": {
+		"format": "{icon} {essid}",
+		"format-alt": "{icon} {essid} ({signalStrength}%/{frequency}GHz)",
+		"format-disconnected": "󰤮 Oтключено",
+		"format-ethernet": "󰈀 Провод",
+		"format-icons": [
+			"󰤯",
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
+		],
+		"interval": 1,
+		"tooltip": false
+	},
+	"battery": {
+		"format": "{icon} {capacity}%",
+		"format-alt": "{icon} {capacity}% ({time})",
+		"format-charging": "{icon} {capacity}%",
+		"format-icons": {
+			"default": [
+				"󰁺",
+				"󰁻",
+				"󰁼",
+				"󰁽",
+				"󰁾",
+				"󰁿",
+				"󰂀",
+				"󰂁",
+				"󰂂",
+				"󰁹"
+			],
+			"charging": [
+				"󰢜",
+				"󰂆",
+				"󰂇",
+				"󰂈",
+				"󰢝",
+				"󰂉",
+				"󰢞",
+				"󰂊",
+				"󰂋",
+				"󰂅"
+			]
+		},
+		"interval": 1,
+		"states": {
+			"warning": 20,
+			"critical": 10
+		},
+		"tooltip": false
+	},
+	"custom/hide-show-v1": {
+		"format": "",
+		"tooltip": false
+	},
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"on-scroll-up": "brightnessctl set 5%+",
+		"on-scroll-down": "brightnessctl set 5%-",
+		"format-icons": [
+			"󰪞",
+			"󰪟",
+			"󰪠",
+			"󰪡",
+			"󰪢",
+			"󰪣",
+			"󰪤",
+			"󰪥",
+			""
+		],
+		"tooltip": false
+	},
+	"wireplumber": {
+		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
+		"format-icons": {
+    			"headphones": "",
+    			"handsfree": "",
+     			"headset": "",
+    			"phone": "",
+    			"portable": "",
+    			"car": "",
+    			"default": [
+				"",
+				"",
+				""
+			]
+  		},
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+		"tooltip": false
+	},
+
+	"wireplumber#source": {
+		"node-type": "Audio/Source",
+		"format": " {volume}%",
+		"format-muted": " {volume}%",
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+		"on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%+",
+		"on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 5%-",
+		"tooltip": false
+	},
+
+	"memory": {
+		"format": " {percentage}%",
+		"tooltip": true,
+		"tooltip-format": "RAM -> {used}G/{total}G | SWAP -> {swapUsed}G/{swapTotal}G",
+		"interval": 1,
+		"states": {
+			"default": 50,
+			"warning": 80,
+			"critical": 99
+		}
+	},
+	"cpu": {
+		"format": "󰍛 {usage}%",
+		"interval": 1,
+		"states": {
+			"default": 25,
+			"warning": 75,
+			"critical": 99
+		},
+		"tooltip": false
+	},
+	"temperature": {
+		"format": "{icon} {temperatureC}°",
+		"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+		"interval": 1,
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
+		"states": {
+			"default": 50,
+			"warning": 80,
+			"critical": 99
+		},
+		"tooltip": false
+	},
+	"custom/hide-show-v2": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/swaync": {
+		"format": "",
+		"on-click": "swaync-client -t",
+		"tooltip": false
+	},
+	"custom/hyprlock": {
+		"format": "",
+		"on-click": "hyprlock",
+		"tooltip": false
+	},
+	"custom/suspend": {
+		"format": "",
+		"on-click": "hyprlock | systemctl suspend",
+		"tooltip": false
+	},
+	"custom/reboot": {
+		"format": "",
+		"on-click": "hyprshutdown -t 'Перезапуск системы ...' --post-cmd 'systemctl reboot'",
+		"tooltip": false
+	},
+	"custom/poweroff": {
+		"format": "",
+		"on-click": "hyprshutdown -t 'Выключение системы ...' --post-cmd 'systemctl poweroff'",
+		"tooltip": false
+	}
+}

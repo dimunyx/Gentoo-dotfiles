@@ -1,0 +1,62 @@
+{
+	"style": "/home/dimunyx/.config/waybar/style.css",
+	"position": "top",
+	"layer": "top",
+	"output": "eDP-1",
+	"reload_style_on_change": true,
+	"modules-left": [
+		"image",
+		"power-profiles-daemon",
+		"custom/hypr-ver",
+		"custom/kernel-ver",
+		"custom/cava",
+		"tray"
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"hyprland/language",
+		"disk",
+		"custom/wttrbar",
+		"clock",
+		"network",
+		"battery",
+		"group/sys",
+		"group/off"
+	],
+	"group/sys": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-duration": 350,
+			"transition-left-to-right": false,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"custom/hide-show-v1",
+			"backlight",
+			"wireplumber",
+			"wireplumber#source",
+			"memory",
+			"cpu",
+			"temperature"
+		]
+	},
+	"group/off": {
+		"orientation": "horizontal",
+		"drawer": {
+			"transition-left-to-right": false,
+			"transition-duration": 350,
+			"click-to-reveal": true
+		},
+		"modules": [
+			"custom/hide-show-v2",
+			"custom/swaync",
+			"custom/hyprlock",
+			"custom/suspend",
+			"custom/reboot",
+			"custom/poweroff"
+		]
+	},
+	"include": "/home/dimunyx/.config/waybar/modules.jsonc"
+}

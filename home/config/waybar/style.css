@@ -1,0 +1,412 @@
+* {
+	font-family: 'CaskaydiaCove Nerd Font';
+	font-size: 16px;
+	font-weight: 800;
+}
+
+window#waybar {
+	background: transparent;
+}
+
+tooltip {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border: 4px solid rgba(180,190,254,1);
+	border-radius: 16px;
+	padding: 2px;
+}
+
+tooltip label {
+	color: rgba(166,173,200,1);
+	padding: 0;
+}
+
+menu {
+	background: rgba(30,30,46,0.8);
+	border: 4px solid rgba(180,190,254,1);
+	border-radius: 16px;
+	padding: 3px;
+}
+
+menuitem {
+	border-radius: 16px;
+	color: rgba(166,173,200,1);
+}
+
+menuitem:hover {
+	background: rgba(180,190,254,0.3);
+	border-radius: 16px;
+}
+
+#image {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-left: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-radius: 16px 0 0 16px;
+	margin-left: 12px;
+	margin-top: 12px;
+	padding: 0 3px 0 5px;
+}
+
+#power-profiles-daemon {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 9px 0 3px;
+}
+
+#power-profiles-daemon.power-saver {
+	color: rgba(166,227,161,1);
+}
+
+#power-profiles-daemon.performance {
+	color: rgba(243,139,168,1);
+}
+
+#custom-hypr-ver {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#custom-kernel-ver {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#custom-cava {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 5px 0 4px;
+}
+
+#tray {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 4px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	border-radius: 0 16px 16px 0;
+	margin-top: 12px;
+	padding: 0 4px 0 2px;
+}
+
+#workspaces {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border: 4px solid rgba(180,190,254,1);
+	border-radius: 16px;
+	margin-top: 12px;
+	padding: 0 0 0 0;
+}
+
+#workspaces button {
+	background: transparent;
+	padding: 0 4px 0 4px;
+	border-radius: 16px;
+}
+
+#workspaces button.urgent {
+	color: rgba(255,0,0,1);
+}
+
+#language {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 4px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-radius: 16px 0 0 16px;
+	margin-top: 12px;
+	padding: 0 2px 0 5px;
+}
+
+#disk {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#disk.warning {
+	color: rgba(235,160,172,1);
+}
+
+#disk.critical {
+	color: rgba(243,139,168,1);
+}
+
+#custom-wttrbar {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#clock {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#network {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#network.ethernet {
+	color: rgba(166,227,161,1);
+}
+
+#network.disconnected {
+	color: rgba(243,139,168,1);
+}
+
+#battery {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#battery.charging {
+	color: rgba(166,227,161,1);
+}
+
+#battery.warning {
+	color: rgba(235,160,172,1);
+}
+
+#battery.critical {
+	color: rgba(243,139,168,1);
+}
+
+#custom-hide-show-v1 {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 8px 0 3px;
+}
+
+#backlight {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3.5px;
+}
+
+#wireplumber {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#wireplumber.muted {
+	color: rgba(243,139,168,1);
+}
+
+#memory {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#memory.warning {
+	color: rgba(235,160,172,1);
+}
+
+#memory.critical {
+	color: rgba(243,139,168,1);
+}
+
+#cpu {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#cpu.warning {
+	color: rgba(235,160,172,1);
+}
+
+#cpu.critical {
+	color: rgba(243,139,168,1);
+}
+
+#temperature {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 3px 0 3px;
+}
+
+#custom-hide-show-v2 {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 4px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	border-radius: 0 16px 16px 0;
+	margin-top: 12px;
+	margin-right: 12px;
+	padding: 0 10px 0 4px;
+}
+
+#custom-swaync {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 7px 0 3px;
+}
+
+#custom-hyprlock {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 8px 0 4px;
+}
+
+#custom-suspend {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 4px 0 4px;
+}
+
+#custom-reboot {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 8px 0 4px;
+}
+
+#custom-poweroff {
+	background: rgba(30,30,46,0.8);
+	color: rgba(166,173,200,1);
+	border-left: 2px solid rgba(180,190,254,1);
+	border-right: 2px solid rgba(180,190,254,1);
+	border-top: 4px solid rgba(180,190,254,1);
+	border-bottom: 4px solid rgba(180,190,254,1);
+	margin-top: 12px;
+	padding: 0 9px 0 4px;
+}
+
+#image:hover,
+#power-profiles-daemon:hover,
+#custom-hypr-ver:hover,
+#custom-kernel-ver:hover,
+#custom-cava:hover,
+#tray:hover,
+#workspaces button:hover,
+#language:hover,
+#disk:hover,
+#custom-wttrbar:hover,
+#clock:hover,
+#network:hover,
+#battery:hover,
+#backlight:hover,
+#wireplumber:hover,
+#memory:hover,
+#cpu:hover,
+#temperature:hover,
+#custom-hide-show-v1:hover,
+#custom-swaync:hover,
+#custom-hyprlock:hover,
+#custom-suspend:hover,
+#custom-reboot:hover,
+#custom-poweroff:hover,
+#custom-hide-show-v2:hover {
+	opacity: 0.8;
+}
