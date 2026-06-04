@@ -1,4 +1,4 @@
 # nixos-btw's dotfiles
-Repo for saving my NixOS system &amp; configuration files :)
+Repo for saving my Gentoo config files!
 
 ![screenshot](assets/gentoo.png)
