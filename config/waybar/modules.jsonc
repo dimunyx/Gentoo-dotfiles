@@ -1,6 +1,7 @@
 {
 	"image": {
 		"path": "/home/dimunyx/.config/waybar/icons/gentoo.svg",
+		"on-click": "rofi -show drun",
 		"tooltip": false
 	},
 	"power-profiles-daemon": {

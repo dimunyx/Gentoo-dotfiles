@@ -31,6 +31,12 @@ hl.on(
 			"/home/dimunyx/.config/hypr/scripts/battery-charging.sh"
 		)
 		hl.exec_cmd(
+			"/home/dimunyx/.config/hypr/scripts/usb-notify-connect.sh"
+		)
+		hl.exec_cmd(
+			"/home/dimunyx/.config/hypr/scripts/usb-notify-disconnect.sh"
+		)
+		hl.exec_cmd(
 			"udiskie --tray"
 		)
 		hl.exec_cmd(

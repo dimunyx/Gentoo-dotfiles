@@ -129,6 +129,13 @@ hl.bind(
 	)
 )
 
+hl.bind(
+	mod .. " + T",
+	hl.dsp.exec_cmd(
+		"flatpak run org.telegram.desktop"
+	)
+)
+
 -- Secondary stuff management
 hl.bind(
 	mod .. " + SHIFT + C",

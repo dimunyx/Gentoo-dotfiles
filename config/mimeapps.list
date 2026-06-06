@@ -5,6 +5,7 @@ image/svg+xml=org.gnome.Loupe.desktop
 application/x-shellscript=nvim.desktop
 application/octet-stream=nvim.desktop
 image/png=org.gnome.Loupe.desktop
+text/html=nvim.desktop
 
 [Added Associations]
 application/x-zerosize=nvim.desktop;
@@ -13,3 +14,4 @@ image/svg+xml=org.inkscape.Inkscape.desktop;org.gnome.Loupe.desktop;
 application/x-shellscript=nvim.desktop;
 application/octet-stream=nvim.desktop;
 image/png=org.gnome.Loupe.desktop;
+text/html=nvim.desktop;

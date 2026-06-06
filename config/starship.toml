@@ -15,7 +15,7 @@ style = "bg: 252"
 symbol = "󰘬"
 truncation_length = 12
 truncation_symbol = ""
-format = "[](bold fg:#b4befe)[$symbol $branch(:$remote_branch)](fg:#7f849c bg:#b4befe)[](bold fg:#b4befe)"
+format = "[](bold fg:#b4befe)[$symbol $branch(:$remote_branch)](fg:#585b70 bg:#b4befe)[](bold fg:#b4befe)"
 
 [git_commit]
 commit_hash_length = 4
@@ -39,7 +39,7 @@ deleted = " 🗑 "
 
 [hostname]
 ssh_only = false
-format =  "[](bold bg: #b4befe)[$hostname](bg:#b4befe bold fg:#7f849c)[](bold fg:#b4befe)"
+format =  "[](bold bg: #b4befe)[$hostname](bg:#b4befe bold fg:#585b70)[](bold fg:#b4befe)"
 trim_at = ".companyname.com"
 disabled = false
 
@@ -47,13 +47,13 @@ disabled = false
 disabled = false
 
 [username]
-format = "[](bold fg:#b4befe)[$user](bold bg:#b4befe fg:#7f849c)[](bold fg:#b4befe)"
+format = "[](bold fg:#b4befe)[$user](bold bg:#b4befe fg:#585b70)[](bold fg:#b4befe)"
 disabled = false
 show_always = true
 
 [directory]
 home_symbol = " "
-format = '[](bold fg:#b4befe)[$path](bold fg:#7f849c bg:#b4befe)[](bold fg:#b4befe)'
+format = '[](bold fg:#b4befe)[$path](bold fg:#585b70 bg:#b4befe)[](bold fg:#b4befe)'
 
 
 [directory.substitutions]
